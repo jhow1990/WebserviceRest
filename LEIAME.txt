@@ -1,0 +1,35 @@
+WebServiceRest
+=======================
+
+O que é isso?
+-------------
+Trata-se de um webservice que irá calcular a distância entre cidades e irá devolver
+o resultado em KM ou MI conforme o usuário enviar via parâmetro, além de exibir 
+as informações em um arquivo XML ou jason.
+
+
+
+Como usar
+-----------------------
+
+Deverá possuir um servidor web tomcat versão 8 ou superior
+
+Efetuar o deploy da aplicação no servidor
+
+O webservice possui dois serviços possíveis de serem utilizados
+
+1 - listAll - este serviço irá listar todas as cidades que estão cadastratadas
+na base de dados
+
+2 - listName - este serviço irá realizar o cálculo de distancia e devolver esta 
+informação baseada na cidade escolhida pelo usuário, o usuário deverá informar como
+parametro o nome da cidade e a forma de cálculo de distâcia de sua preferencia.
+O parametro para utilização no cáclculo pode ser: 0 - para KM e 1 - para Milhas.
+
+Exemple:
+
+Lista a cidade de Nova Iorque comparando em KM entre outras cidades do banco de dados.
+http://localhost:8080/webserviceRestFull/city/listName?nameCidade=Nova&unidadeMedida=0
+
+Lista todas as cidades do banco de dados
+http://localhost:8080/webserviceRestFull/city/listAll
