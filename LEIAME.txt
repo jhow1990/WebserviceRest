@@ -26,7 +26,7 @@ informação baseada na cidade escolhida pelo usuário, o usuário deverá infor
 parametro o nome da cidade e a forma de cálculo de distâcia de sua preferencia.
 O parametro para utilização no cáclculo pode ser: 0 - para KM e 1 - para Milhas.
 
-Exemple:
+Exemplo:
 
 Lista a cidade de Nova Iorque comparando em KM entre outras cidades do banco de dados.
 http://localhost:8080/webserviceRestFull/city/listName?nameCidade=Nova&unidadeMedida=0
